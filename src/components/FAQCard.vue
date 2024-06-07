@@ -54,7 +54,7 @@ let faqs: Faqs[] = reactive([
               {{ faq.question }} ?
             </h2>
             <button
-              @keypress="faq.show = !faq.show"
+              @click="faq.show = !faq.show"
               class="focus:outline-none hover:opacity-50"
             >
               <img src="/icon-plus.svg" alt="plus icon" v-if="!faq.show" />
